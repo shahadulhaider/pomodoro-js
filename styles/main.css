@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+  background-color: #1a237e ;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 50% repeat(5, 1fr);
+  grid-gap: 0;
+}
+
+.totaltime {
+  grid-row: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12rem;
+}
+
+
+.update, .action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.progressbar {
+  background-color: #040494 ;
+  height: 40px;
+  /* width: 320px; */
+  border-radius: 5px;
+  color: white;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 120px;
+  background-color: #c5cae9 ;
+  color: #2c2727;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin:0 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.action button{
+  padding: 10px;
+  width: 260px;
+  font-size: 1.2rem;;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #c5cae9;
+  color: #2c2727;
+  border: none;
+  outline: none;
+  text-transform: lowercase;
+}
+.action button:active{
+  background-color: #23f3a3;
+  color: #131010;
+  border: 1px solid white
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
